@@ -8,5 +8,5 @@ import org.junit.runners.Suite;
         })
 
 
-public class TestSuit {
+public class TestSuite {
 }
