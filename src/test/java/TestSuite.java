@@ -5,8 +5,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         TestApodApi.class,
         TestNeoLookUp.class
-        })
-
+})
 
 public class TestSuite {
 }

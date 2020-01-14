@@ -10,18 +10,18 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.*;
 
 public class TestApodApi {
-    WebDriver driver;
+    private WebDriver driver;
     private static final String URL_KEY = "https://api.nasa.gov/";
     private static final String API_KEY = "DEMO_KEY";
     private static final String API_KEY_Low = "demo_key";
-    String date;
+    private String date;
 
-    @Test
+
     /**
      * Check API for page which is changed each day automatically:
      * so test takes data from UI and compare them with API data
       */
-
+    @Test
     public void testApodDefault() throws InterruptedException, ParseException {
         RestAssured.baseURI = URL_KEY;
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\ebolotova\\webdrivers\\chromedriver.exe");
